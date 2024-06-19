@@ -1,0 +1,44 @@
+.navbar {
+    height: 60px;
+    background: white;
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1);
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+    gap: 30px;
+}
+
+
+.logo {
+    margin-left: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 700px;
+}
+
+.navbar li {
+    list-style: none;
+    color: #241D7A;
+    padding: 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar li:hover {
+    color: rgba(23, 188, 229, 0.758);
+}
