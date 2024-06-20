@@ -1,12 +1,14 @@
 .contactUs {
     background-image: url('../Assets/connect.jpg');
+    font-size: large;
+    height: 100vh;
 }
 
 .title {
     color: white;
     text-decoration: none;
     margin-left: 162px;
-    padding-top: 20px;
+    padding-top: 150px;
 }
 
 .title .header {

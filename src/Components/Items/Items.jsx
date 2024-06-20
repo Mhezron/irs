@@ -16,10 +16,8 @@ export const Items = () => {
       <h2>Products</h2>
       <div className="card-items">
       <div className="card">
-      <div className="img-card">
           <img src={weighbridge} alt="" />
-        </div>
-      <h3>Weighbridges</h3>
+              <h3>Weighbridges</h3>
           <p>
           Durable weighbridges for precise and reliable weighing solutions in industrial applications.
           </p>

@@ -16,8 +16,8 @@ export const Home = () => {
         <Items/>
         <ContactUs/>
         {/* <About/> */}
-        <ProductDisplay/>
-        <RelatedProducts items={collections}/>
+        {/* <ProductDisplay/> */}
+        {/* <RelatedProducts items={collections}/> */}
     </div>
   )
 }
