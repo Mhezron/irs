@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 50px;
+    margin-right: 90px;
 }
 
     .menu-icon.open .bar1 {
