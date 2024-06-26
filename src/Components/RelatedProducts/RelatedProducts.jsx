@@ -1,26 +1,27 @@
 import React from 'react'
 import './RelatedProducts.css'
+import { useNavigate } from 'react-router-dom'
 
-export const RelatedProducts = ({items}) => {
+export const RelatedProducts = ({relatedProducts}) => {
+
+    const navigate = useNavigate()
+    const handleClick =(id)=> {
+        navigate(`/product/${id}`)
+        window.scrollTo(0,0)
+    }
   return (
     <div className="relatedproducts">
             <h2>Related Products</h2>
-            <div className="items-card">
-                {items.map(item => (
-                    <div key={item.id} className="product-card">
-                        <img src={item.image} alt={item.name} />
-                        <h4>{item.name}</h4>
-                        <div className="item-prices">
-                            <div className="new-prices">
-                                <p>New Price: ${item.new_price}</p>
-                            </div>
-                            <div className="old-prices">
-                                <p>Old Price: ${item.old_price}</p>
-                            </div>
+            <div className="cards">
+            <div className="related-items">
+                    {relatedProducts.map(product => (
+                        <div className="related-card" key={product.id} onClick={() => handleClick(product.id)}>
+                            <img src={product.image} alt="" />
+                            <h3>{product.name}</h3>
+                            {/* <p>{product.description}</p> */}
                         </div>
-                        <p>Category: {item.category}</p>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
   )
