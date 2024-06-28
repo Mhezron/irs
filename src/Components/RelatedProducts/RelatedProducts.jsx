@@ -12,17 +12,14 @@ export const RelatedProducts = ({relatedProducts}) => {
   return (
     <div className="relatedproducts">
             <h2>Related Products</h2>
-            <div className="cards">
             <div className="related-items">
                     {relatedProducts.map(product => (
                         <div className="related-card" key={product.id} onClick={() => handleClick(product.id)}>
                             <img src={product.image} alt="" />
-                            <h3>{product.name}</h3>
-                            {/* <p>{product.description}</p> */}
+                            <h4>{product.name}</h4>
                         </div>
                     ))}
                 </div>
-            </div>
         </div>
   )
 }

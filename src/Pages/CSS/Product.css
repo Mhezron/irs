@@ -1,7 +1,5 @@
 button {
-    margin: 100px 170px;
-    padding: 10px 30px;
-    font-weight: 600;
+    margin: 80px 170px;
     width: 120px;
     height: 40px;
     cursor: pointer;
@@ -40,14 +38,14 @@ button:hover {
 }
 
 .productdisplay-img-list img {
-    height: 100px; 
-    width: 100px;
+    height: 60px; 
+    width: 60px;
     border: 2px solid aliceblue;
 }
 
 .productdisplay-img img {
-    width: 500px;
-    height: 463px;
+    width: 300px;
+    height: 300px;
 }
 
 .productdisplay-right {
@@ -64,12 +62,11 @@ button:hover {
 
 .productDescription {
     width: 80%;
-    margin: 50px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     padding: auto;
-    margin: 50px 170px;
+    margin: 30px 170px;
 }
 
 .productDescription h2 {
@@ -88,4 +85,92 @@ button:hover {
 .productdisplay-right-stars {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+
+
+/* responsiveness */
+
+
+@media (max-width: 768px) {
+    button {
+        margin: 40px auto;
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .productdisplay-right {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .productdisplay-right h1 {
+        font-size: 32px;
+    }
+
+    .productDescription {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .productDescription h2 {
+        font-size: 22px;
+    }
+
+    .productDescription p {
+        padding: 15px;
+    }
+
+    .related-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        margin: 30px auto;
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .productdisplay-left {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .productdisplay-img-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productdisplay-img-list img {
+        height: 50px; 
+        width: 50px;
+    }
+
+    .productdisplay-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .productdisplay-right h1 {
+        font-size: 28px;
+    }
+
+    .productDescription h2 {
+        font-size: 20px;
+    }
+
+    .productDescription p {
+        padding: 10px;
+    }
 }
