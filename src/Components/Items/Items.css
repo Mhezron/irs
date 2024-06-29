@@ -83,6 +83,9 @@
 }
 
 @media (max-width: 768px) {
+    .items {
+        align-items: center;
+    }
     .card-items {
         grid-template-columns: 1fr;
     }
@@ -90,5 +93,12 @@
     .card {
         max-width: 100%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .items {
+        align-items: center;
+        margin: 20px;
     }
 }

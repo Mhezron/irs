@@ -9,7 +9,7 @@ export const RelatedProducts = ({relatedProducts}) => {
         navigate(`/product/${id}`)
         window.scrollTo(0,0)
     }
-  return (
+    return (
     <div className="relatedproducts">
             <h2>Related Products</h2>
             <div className="related-items">
@@ -21,5 +21,5 @@ export const RelatedProducts = ({relatedProducts}) => {
                     ))}
                 </div>
         </div>
-  )
+    )
 }

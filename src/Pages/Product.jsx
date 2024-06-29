@@ -53,10 +53,10 @@ export const Product = () => {
     </div>
     <div className="productDescription">
         <h2>Description</h2>
-        <p>{product.description}</p>
+        <p>{product.info}</p>
       </div>
 
       <RelatedProducts relatedProducts={relatedProducts} />
     </>
-   )
+    )
   } 

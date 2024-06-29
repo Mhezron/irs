@@ -153,3 +153,42 @@
         height: 200px;
     }
 }
+
+@media (max-width: 768px) {
+    .contactUs {
+        background-size: contain; /* Resize background image for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contactUs {
+        margin: 0px;
+        width: 100%;
+        background-size: contain; 
+    }
+    .title .header {
+        font-size: 22px;
+    }
+    .cards {
+        gap: 10px;
+        padding: 10px;
+    }
+    .card-item {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+    .getInTouch {
+        padding: 10px;
+        gap: 10px;
+    }
+    .input, .message-field {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .submit-button button {
+        width: 90%;
+        max-width: none;
+        font-size: 16px;
+    }
+}
