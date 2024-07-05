@@ -25,7 +25,7 @@ export const Footer = () => {
           <h2>Contacts</h2>
             <li><FontAwesomeIcon icon={faLocationDot} />Nairobi South B, Southgate Center</li>
             <li><FontAwesomeIcon icon={faEnvelope} /> irscales@gmail.com</li>
-            <li><FontAwesomeIcon icon={faPhoneVolume} /> 0782828886, 0757383838</li>
+            <li><FontAwesomeIcon icon={faPhoneVolume} />  0722 519 334,  0717 700 196</li>
             <li><FontAwesomeIcon icon={faInstagram} />irscales</li>
             
         </div>

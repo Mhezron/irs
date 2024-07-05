@@ -47,7 +47,10 @@ export const Product = () => {
         <img src={star_icon_dull} alt="" />
       </div>
       <div className="productdisplay-right-description">
-        <p>{product.description}</p>
+        <ul>{product.description.map((item, index)=> (
+          <li key={index}>{item}</li>
+        ))}
+        </ul>
       </div>
       </div>
     </div>

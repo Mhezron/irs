@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import flooscale from '../Assets/floorscalenobg.png'
+import hero from '../Assets/hero.png'
 import { Link } from 'react-scroll'
 
 export const Hero = () => {
@@ -13,7 +13,7 @@ export const Hero = () => {
           <Link to='contactUs' smooth={true} duration={500} ><button>Talk to us</button></Link> 
         </div>
         <div className="hero-right">
-            <img src={flooscale} alt="" />
+            <img src={hero} alt="" />
         </div>
     </div>
   )

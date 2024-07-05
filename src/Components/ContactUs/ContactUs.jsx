@@ -13,8 +13,8 @@ export const ContactUs = () => {
         <div className="cards">
             <div className="card-item">
                 <h4><FontAwesomeIcon icon={faPhoneVolume} />Call</h4>
-                <p>+254 703 4454 56</p>
-                <p>+254 784 5738 67</p>
+                <p>+254 722 519 334</p>
+                <p>+254 717 700 196</p>
             </div>
             <div className="card-item">
                 <h4><FontAwesomeIcon icon={faEnvelope} />Email</h4>
@@ -27,6 +27,7 @@ export const ContactUs = () => {
                 <p>South gate Center</p>
             </div>
         </div>
+        <form> 
         <div className="getInTouch">
             <div className="getInTouch-left">
                 <h3>Get in Touch</h3>
@@ -37,6 +38,7 @@ export const ContactUs = () => {
                 We value your interest and look forward to assisting you!
                 </p>
             </div>
+            
             <div className="getInToch-right">
                 <div className="input-field">
                     <input className= 'input'type="text" placeholder='Your name'/>
@@ -48,6 +50,7 @@ export const ContactUs = () => {
         <div className="submit-button">
             <button>Submit</button>
         </div>
+        </form>
     </div>
   )
 }
